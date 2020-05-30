@@ -1,3 +1,54 @@
+// profileLookUp
+
+// Setup
+var contacts = [
+   {
+      firstName: "Akira",
+      lastName: "Laine",
+      number: "0543236543",
+      likes: ["Pizza", "Coding", "Brownie Points"],
+   },
+   {
+      firstName: "Harry",
+      lastName: "Potter",
+      number: "0994372684",
+      likes: ["Hogwarts", "Magic", "Hagrid"],
+   },
+   {
+      firstName: "Sherlock",
+      lastName: "Holmes",
+      number: "0487345643",
+      likes: ["Intriguing Cases", "Violin"],
+   },
+   {
+      firstName: "Kristian",
+      lastName: "Vos",
+      number: "unknown",
+      likes: ["JavaScript", "Gaming", "Foxes"],
+   },
+];
+
+// Activating a function to look up name and prop
+function lookUpProfile(name, prop) {
+   //Input any of the following names :Harry, Akira, Sherlock, Kristian
+   // Followed by: lastName, number, or likes to receive profiles value
+
+   // Loop through the array of contacts to find each object
+   for (var index = 0; index < contacts.length; index++) {
+      //  console.log(contacts[i].firstName)
+
+      // Verifies first Name of lookUpProfile
+      // Takes current index, then accesses the key (firstName) and checks to see if it is equal to the name passed into the function (name)
+      if (contacts[index].firstName === name) {
+         // Returns contact with value , or (||) "No such property" if prop doesn't correspond with the key of prop
+         return contacts[index][prop] || "No such property";
+      }
+   } //
+   return "No such contact";
+}
+
+console.log(lookUpProfile("Akira", "likes"));
+
 // Counting cards function
 
 // Global variable, Will not be manipulated
