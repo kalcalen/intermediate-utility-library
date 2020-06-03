@@ -1,3 +1,16 @@
+// spliceRemove
+function spliceRemove(inputSpliceRem) {
+   const arr = [2, 5, 7, 9, 2, 4, 1];
+   arr.splice(inputSpliceRem);
+
+   return arr;
+}
+// randomRange
+
+function randomRange(myMin, myMax) {
+   return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+}
+
 // profileLookUp
 
 // Setup
