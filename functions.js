@@ -1,8 +1,9 @@
 // spliceAdd
 
 function spliceAdd(inputSpliceAdd) {
-   var arr = ["LeBron James is", "than Michael Jordan"];
+   const arr = ["LeBron James is", "than Michael Jordan"];
    arr.splice(inputSpliceAdd);
+   return arr;
 }
 
 // spliceRemove
