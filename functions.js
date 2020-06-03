@@ -1,8 +1,25 @@
+//typeOf
+
+function typeOf(val) {
+   var typeOfVar = val;
+   console.log(typeOfVar);
+
+   return typeof spiderMan;
+}
+
+// indexOf
+
+function indexOf(inputIndexOf) {
+   const arr = [12, 43, 27, 74];
+
+   return arr.indexOf(inputIndexOf) != -1;
+}
+
 // spliceAdd
 
 function spliceAdd(inputSpliceAdd) {
    const arr = ["LeBron James is", "than Michael Jordan"];
-   arr.splice(inputSpliceAdd);
+   arr.splice(1, 0, inputSpliceAdd);
    return arr;
 }
 
